@@ -1,0 +1,145 @@
+.center {
+    display: block;
+    float: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+	margin-bottom: 5px;
+}
+a:link {
+    color: darkblue;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+a:visited {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+button {
+    float: middle;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+
+    background-color: gold;
+    border-width: medium;
+    border-color: gold;
+
+    padding: 18px;
+
+    font-size: 18px;
+    font-style: italic;
+    vertical-align: middle;
+}
+button:hover {
+    background-color: darkgoldenrod;
+}
+hr {
+    width: medium;
+    color: gold;
+}
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+iframe {
+    display: block;
+    float: middle;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-width: medium;
+    border-color: gold;
+}
+body {
+    background-color: darkslategray;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: medium;
+    border-color: gold;
+    padding: 20px;
+    background-color: #55FFFF;/*same as Templeos-header.png*/
+    line-height: 175%;
+    font-size: 18px;
+}
+#disclaimer {
+    display: block;
+    float: middle;
+    margin-left: auto;
+    margin-right: auto;
+    width: 825px;
+
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    margin-bottom: 40px;
+}
+#main {
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+#donate {
+    display: block;
+    float: middle;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
