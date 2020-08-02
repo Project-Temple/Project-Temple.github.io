@@ -45,7 +45,7 @@ hr {
     color: gold;
 }
 h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding: 0px;margin: 0px;
 }
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -177,8 +177,8 @@ label {
 
 .nav ul, .nav li, label {
     line-height: 50px;
-    margin: 0;
-    padding: 0 0;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
     list-style: none;
     text-decoration: none;
     color: black;
