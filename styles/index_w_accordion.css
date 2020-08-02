@@ -128,8 +128,9 @@ body {
     vertical-align: middle;
     float: left;
     z-index: 0;
-    margin: 17px 1em 0 2em;
+    margin: 17px 0em 0 0em;
 }
+
 .item input + .arrow {
     transform: rotate(-90deg);
     transition: 0.1s;
@@ -156,6 +157,7 @@ label {
 	background-color: darkcyan;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
+	text-indent: -12px
 }
 .nav {
     background-color: cyan;
