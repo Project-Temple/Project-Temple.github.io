@@ -53,6 +53,9 @@ h3 {
 h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding: 0px;margin: 0px;
 }
+p {
+	line-height: normal;
+}
 iframe {
     display: block;
     float: middle;
