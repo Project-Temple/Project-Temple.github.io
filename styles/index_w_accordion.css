@@ -48,7 +48,7 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding: 0px;margin: 0px;
 }
 h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding: 0px;margin: 0px;
 }
 iframe {
     display: block;
@@ -169,6 +169,7 @@ label {
 
 #nav-icon {
     font-size: 28px;
+	font-weight: bold;
     line-height: 50px;
     padding-left: 0em;
     color: white;
@@ -187,5 +188,4 @@ label {
 }
 .item ul {
     padding: 0 0em;
-	
 }
