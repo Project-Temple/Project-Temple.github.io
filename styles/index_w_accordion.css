@@ -161,6 +161,7 @@ label {
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 	text-indent: -0.7em;
+	border-bottom: 5px solid gold
 }
 .nav {
     background-color: cyan;
