@@ -36,7 +36,7 @@
 							<p>Obviously magazines for the STGW-57 in the US aren't exactly cheap. On top of that, they're not optimized to feed .308 Winchester. This project looks to solve that by providing a cheaper alternative specifically tailored for .308 Winchester. According to others that have .308 conversions, 7.5x55 Swiss magazines seem to work, though I don't personally like it for a couple reasons:</p>
 								<p>1. The taper of .308 is different than 7.5x55 Swiss.</p>
 								<p>2. The overall length of the cartridge is much shorter.</p>
-							<img src="images/Ammo-Comparison.png" class="center"></img>
+							<img src="images/Ammo-Comparison.png" class="center">
 							<p style="text-indent: 40px">These two factors combine to make a less than repeatable presentation of the cartridge. When loaded into the 7.5x55 Swiss magazine, the .308 is forced to follow the curvature of the magazine. The curvature of the magazine is normally dictated by the taper of the cartridge. In the case of an incorrect taper following the curvature, the cartridges aren't going to rest along each other's bodies. In this case of an excessive curvature, the cartridge will pivot about the transition to the neck.
 							</p>
 							<p> Eventually this leads towards the feed lips of the magazine exerting most of the pressure towards the front of the body of the cartridge, and due to how the cartridge is supported, the body doesn't sit flush against the feed lips and the head of the cartridge is lower at the rear of the magazine. The severity of the angle bewteen the body and feed lips changes depending on how many cartridges are loaded, the more loaded the it is, the greater the angle. This is the first inconsistency in presentation.
@@ -52,7 +52,7 @@
 							<p>•.308 galil Magazine</p>
 							<p>Comparing the two, the BM-59 magazine is more availble, cheaper and upon inspection generally seems to be better built. Something about the .308 galil magazines, especially their finish, seemed chincy. Once I decided on the BM-59 magazine, I compared the dimensions with the STGW-57 magazine. I'm happy to report that they are absurdly similar. Using digital calipers I found that by comparison to the STGW-57 magazine, the width at the rear is 0.5mm less, front to back it's 0.3mm less and the narrow width at the front is 0.1mm less, I honestly couldn't ask for a better fit. The fact they're all slightly less is good too since we can always add material if we need to, removing from a dimension is obviously a different story with a hollow stamping.
 							</p>
-							<img src="images/Magazines_STGW_BM.png" class="center"></img>
+							<img src="images/Magazines_STGW_BM.png" class="center">
 							<h4 style="text-align: center">Solution:</h4>
 							<p>
 							</p>
@@ -61,8 +61,28 @@
 					<li><div class="sub-item">
                         <input type="checkbox" id="STGW-Center"/>
                         <img src="images/Arrow2.png" class="arrow" style="padding: 0 1em"><label for="STGW-Center" style="text-align: left;text-indent: .1em"><h4>.308 Winchester Barrel Adapter<h4></h4></label>
-						<ul>
-							<p>Use Dash 116, 3/4" heat resistant o-ring, o-ring kit at <a href="https://www.mcmaster.com/o-rings/high-temperature-o-ring-assortments/">https://www.mcmaster.com/o-rings/high-temperature-o-ring-assortments/</a></p>
+						<ul style="text-align: justify;">
+							<h4 style="text-align: center">Problem:</h4>
+							<p>If you've got a 7.5x55 STGW-57 parts kit and a .308 barrel, you've probably noticed the problem that the end of the jacket is no longer supported by the barrel. This would be fine if the jacket were fairly rigid like a free floated rail system, though it's a thin aluminum tube rivited to a part that is screwed onto the trunnion. This means that the front sight is free to wander with the unsupported jacket. Even if you don't plan to use iron sights, you should still fix this problem because the barrel can whip into the jacket while firing or vice-versa, which at the very least would lead to finish wear and dings.
+							</p>
+							<img src="images/Barrel-Jacket.png" class="center">
+							<h4 style="text-align: center">Options:</h4>
+							<p>Obviously we want to jam something between the barrel and the jacket to align them and transfer forces between them. The easiest solution would be a split tube which butts up against the chamfers of the  muzzle break and first grenade launching ring. However I'd like to have nothing protruding past the end of the barrel jacket. This means we need either a friction fit or to touch off of another surface to stop our sleeve from sliding forwards.
+							</p>
+							<h4 style="text-align: center">First Solution:</h4>
+							<img src="images/friction.png" class="center" style="width:50%">
+							<p>The first thing I tried was using a wedge that when screwed closer, would open up the split ring giving a friction fit against the jacket. This ended up not being feasible due to the difference in diameter between the jacket and barrel not leaving enough room for any decent sized bolt.
+							</p>
+							<h4 style="text-align: center">Second Final Solution:</h4>
+							<div id="main" style="margin-bottom: 0px">
+							<img src="images/Barrel Sleeve Whole Alternative.PNG" style="width:49%"/>
+							<img src="images/Barrel Sleeve Whole Alternative_2.PNG" style="width:49%"/>
+							</div>
+							<p>This implementation relies off of using a step on the inside of the barrel jacket to interact with the chamfer on the O.D. of our part to stop the sleeve from sliding forward. I have a slot for an O-ring (115 O-ring, 11/16" I.D.) to help with both keeping it together during assembly and for better fitment between the jacket and barrel. Keeping it together during assembly is important because it has to come from behind the jacket, meaning you've got a nice narrow ~18" tube you've got to guide it down, so it's best just to let the O-ring hold it onto the barrel. You may have to experiment with the depth the groove, though I have it set in a slight slot right now. It also doesn't need to be heat resistant since whatever material you print will be a problem before the o-ring.
+							</p>
+							<p>To download the CAD files, click the link below:
+							</p>
+							<a href="downloads/Barrel_Sleeve.zip" style="margin: 40px; font-weight: bold">ZIP Package</a>
 							<hr>
 						</ul>
 					<li><div class="sub-item">
