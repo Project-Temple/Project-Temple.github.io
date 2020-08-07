@@ -1,3 +1,7 @@
+@font-face { font-family: 'myfont'; font-style: normal;	src: url("fonts/IBMPlexSans-Text.woff") format('woff'); };
+@font-face { font-family: 'myfont'; font-style: italic; src: url("fonts/IBMPlexSans-TextItalic.woff") format('woff'); };
+@font-face { font-family: 'myfont'; font-weight: 800;   src: url("fonts/IBMPlexSans-Bold.woff") format('woff'); };
+
 .center {
     display: block;
     float: middle;
@@ -54,7 +58,7 @@ h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding: 0px;margin: 0px;
 }
 p {
-	line-height: 24px;
+	line-height: 30px;
 	margin: 30px;
 	text-indent: 40px;
 }
@@ -70,7 +74,7 @@ iframe {
 body {
     background-color: darkslategray;
 
-    font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    font-family: 'myfont';
     
 }
 #container {
