@@ -1,7 +1,3 @@
-@font-face { font-family: 'myfont'; font-style: normal;	src: url("fonts/IBMPlexSans-Text.woff") format('woff'); };
-@font-face { font-family: 'myfont'; font-style: italic; src: url("fonts/IBMPlexSans-TextItalic.woff") format('woff'); };
-@font-face { font-family: 'myfont'; font-weight: 800;   src: url("fonts/IBMPlexSans-Bold.woff") format('woff'); };
-
 .center {
     display: block;
     float: middle;
