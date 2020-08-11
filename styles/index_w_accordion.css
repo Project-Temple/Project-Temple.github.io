@@ -51,6 +51,9 @@ hr {
     width: medium;
     color: gold;
 }
+h1 {
+    font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;
+}
 h2 {
     font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;
 }
