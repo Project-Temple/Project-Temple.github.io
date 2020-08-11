@@ -52,16 +52,16 @@ hr {
     color: gold;
 }
 h1 {
-    font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;
+    font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;vertical-align: bottom;
 }
 h2 {
-    font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;
+    font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;vertical-align: bottom;
 }
 h3 {
-    font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;
+    font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;vertical-align: bottom;
 }
 h4 {
-    font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;
+    font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;vertical-align: bottom;
 }
 p {
 	line-height: 30px;
