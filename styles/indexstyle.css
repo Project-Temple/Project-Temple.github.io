@@ -4,6 +4,8 @@
 
 @font-face { font-family: 'IBMmono';                     src: url('/fonts/IBMPlexMono-Text-Latin1.woff') format('woff'); }
 
+<meta name="theme-color" content="#2f4f4f">
+
 .center {
     display: block;
     float: middle;
