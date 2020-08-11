@@ -39,7 +39,10 @@ button {
     border-width: medium;
     border-color: gold;
 
-    padding: 18px;
+    padding-left: 18px;
+	padding-right: 18px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 
     font-size: 20px;
     font-style: italic;
