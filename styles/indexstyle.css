@@ -23,7 +23,7 @@ a:hover {
     text-decoration: underline;
 }
 a:visited {
-	color: #6bffff;
+	color: darkslategray;
     /*color: darkcyan;*//*Original*/
     text-decoration: none;
 }
