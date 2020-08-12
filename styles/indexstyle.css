@@ -37,7 +37,7 @@ button {
     transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
 
-    background-color: #ccac00;
+    background-color: goldenrod;
 	/*background-color: gold;*//*Original Color*/
     border-width: medium;
     border-color: #ccac00;
@@ -52,7 +52,7 @@ button {
     vertical-align: middle;
 }
 button:hover {
-	background-color: #936b09;
+	background-color: darkgoldenrod;
     /*background-color: darkgoldenrod;*//*Original Color*/
 }
 hr {
@@ -73,7 +73,7 @@ iframe {
     margin-right: auto;
 
     border-width: medium;
-	border-color: #ccac00
+	border-color: goldenrod;
     /*border-color: gold;*//*Original Color*/
 }
 body {
@@ -88,7 +88,7 @@ body {
     margin-right: auto;
     border-style: solid;
     border-width: medium;
-	border-color: #ccac00;
+	border-color: goldenrod;
     /*border-color: gold;*//*Orignal Color*/
     padding: 20px;
 	background-color: #009999;
