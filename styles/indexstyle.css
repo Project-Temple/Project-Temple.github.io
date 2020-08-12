@@ -91,7 +91,8 @@ body {
 	border-color: goldenrod;
     /*border-color: gold;*//*Orignal Color*/
     padding: 20px;
-	background-color: #009999;
+	background-color: #00cccc;
+	/*background-color: #009999;*//*Second Option*/
     /*background-color: #55FFFF;*//*Original, same as Templeos-header.png*/
     line-height: 175%;
     font-size: 18px;
