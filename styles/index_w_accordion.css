@@ -13,15 +13,17 @@
 	margin-bottom: 5px;
 }
 a:link {
-    color: blue;
+    color: darkblue;
     text-decoration: none;
+	font-weight: bold;
 }
 a:hover {
     color: blue;
     text-decoration: underline;
 }
 a:visited {
-    color: darkcyan;
+	color: #6bffff;
+    /*color: darkcyan;*//*Original*/
     text-decoration: none;
 }
 
@@ -34,22 +36,28 @@ button {
     transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
 
-    background-color: gold;
+    background-color: #ccac00;
+	/*background-color: gold;*//*Original Color*/
     border-width: medium;
-    border-color: gold;
+    border-color: #ccac00;
+	/*border-color: gold;*//*Original Color*/
 
-    padding: 18px;
-
-    font-size: 20px;
-    font-style: italic;
+    padding-left: 18px;
+	padding-right: 18px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+    font-size: 1.25vmax;
     vertical-align: middle;
 }
 button:hover {
-    background-color: darkgoldenrod;
+	background-color: #936b09;
+    /*background-color: darkgoldenrod;*//*Original Color*/
 }
 hr {
     width: medium;
-    color: gold;
+	color: #ccac00;
+    /*color: gold;*//*Original Color*/
 }
 h1 {
     font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;;padding: 0px;margin: 0px;vertical-align: bottom;
@@ -75,12 +83,13 @@ iframe {
     margin-right: auto;
 
     border-width: medium;
-    border-color: gold;
+	border-color: #ccac00
+    /*border-color: gold;*//*Original Color*/
 }
 body {
     background-color: darkslategray;
 
-    font-family: 'IBM';
+    font-family: 'IBM', sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     
 }
 #container {
@@ -89,9 +98,11 @@ body {
     margin-right: auto;
     border-style: solid;
     border-width: medium;
-    border-color: gold;
+	border-color: #ccac00;
+    /*border-color: gold;*//*Orignal Color*/
     padding: 20px;
-    background-color: #55FFFF;/*same as Templeos-header.png*/
+	background-color: #009999;
+    /*background-color: #55FFFF;*//*Original, same as Templeos-header.png*/
     line-height: 175%;
     font-size: 18px;
 }
@@ -121,7 +132,6 @@ body {
 
     text-align: center;
 }
-
 
 /*Func*/
 
