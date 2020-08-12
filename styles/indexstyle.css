@@ -84,7 +84,8 @@ body {
     border-width: medium;
     border-color: gold;
     padding: 20px;
-    background-color: #55FFFF;/*same as Templeos-header.png*/
+	background-color: #009999;
+    /*background-color: #55FFFF;*//*Original, same as Templeos-header.png*/
     line-height: 175%;
     font-size: 18px;
 }
