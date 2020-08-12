@@ -37,9 +37,11 @@ button {
     transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
 
-    background-color: gold;
+    background-color: #ccac00;
+	/*background-color: gold;*//*Original Color*/
     border-width: medium;
-    border-color: gold;
+    border-color: #ccac00;
+	/*border-color: gold;*//*Original Color*/
 
     padding-left: 18px;
 	padding-right: 18px;
@@ -50,11 +52,13 @@ button {
     vertical-align: middle;
 }
 button:hover {
-    background-color: darkgoldenrod;
+	background-color: #936b09;
+    /*background-color: darkgoldenrod;*//*Original Color*/
 }
 hr {
     width: medium;
-    color: gold;
+	color: #ccac00;
+    /*color: gold;*//*Original Color*/
 }
 h2 {
     font-family: 'IBMmono',sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial;
@@ -69,7 +73,8 @@ iframe {
     margin-right: auto;
 
     border-width: medium;
-    border-color: gold;
+	border-color: #ccac00
+    /*border-color: gold;*//*Original Color*/
 }
 body {
     background-color: darkslategray;
@@ -83,7 +88,8 @@ body {
     margin-right: auto;
     border-style: solid;
     border-width: medium;
-    border-color: gold;
+	border-color: #ccac00;
+    /*border-color: gold;*//*Orignal Color*/
     padding: 20px;
 	background-color: #009999;
     /*background-color: #55FFFF;*//*Original, same as Templeos-header.png*/
