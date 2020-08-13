@@ -19,7 +19,7 @@ a:link {
 	font-weight: bold;
 }
 a:hover {
-    color: darkblue;
+    color: blue;
     text-decoration: underline;
 }
 a:visited {
