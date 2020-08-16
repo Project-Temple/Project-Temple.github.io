@@ -309,11 +309,47 @@
 								then on the right side of the graphics menu, then select the mesh. Now you can go on to use the left menu to edit. Even if you're making your own mesh from scratch you'll need to do this since you're human and are bound to make mistakes (Save,Save,Save!), especially when you're working with the rather finicky mesh editor.
 							</p>
 							<h4 style="text-indent: 40px">• Code Additions</h4>
-							<p>So I wanted to make the code somewhat my own, rather than just switch out a few assets and tweak a few variables. I decided I wanted the meshes to be animated in some way other than just rotation. Essentailly I decided I wanted verticies to move in relation to each other during the animation and that certainly wasn't done in TOSTheme.HC.Z . After some research I figured out a way to do it, the example is explained below.
-							</p>
-							<img src="images/mesh draw.png" style="margin-left: 25px" />
-							<p>So I've cleaned it up a bit for the purposes of this write-up, I apologize that the rest isn't, though the other examples of drawing the mesh are pretty much the exact same but with the variables changed out for the deifined integers for scaling and the mesh files themselves.</p>
+							<p>Starting out, let me post these two images below for reference.</p>
 							<img src="images/define.png" style="margin-left: 50px" />
+							<p>So I wanted to make the code somewhat my own, rather than just switch out a few assets and tweak a few variables. I decided I wanted the meshes to be animated in some way other than just rotation. Essentailly I decided I wanted verticies to move in relation to each other during the animation and that certainly wasn't done in TOSTheme.HC.Z . After some research I figured out a way to do it, though first we're going to go over how it was done originally.
+							</p>
+							<div align="center">
+							<img src="images/original mesh.png" />
+							</div>
+							<p>Basically it defines the identity equation for the matrix sets the x,y and z coordinates and its rotation in x and z. 
+							<code class="language-plaintext highlighter-rouge">"Sprite3"</code>
+							 uses the modified matrix on the mesh for it to be drawn as you've defined it. Now this was removed due to the fact I was looking to add those features I mentioned in the previous paragraph. Below you can see my iteration of it and explanation of how those features were added.
+							</p>
+							<div align="center">
+							<img src="images/mesh draw.png" />
+							</div>
+							<p>So I've cleaned it up a bit for the purposes of this write-up, I apologize that the rest of the file isn't, though the other examples of drawing the mesh are pretty much the exact same but with the variables changed out for the deifined integers for scaling and the mesh files themselves. Moving on, from the start you can see 
+							<code class="language-plaintext highlighter-rouge">"r1"</code>	
+							is set as a matrix. Earlier in the file 
+							<code class="language-plaintext highlighter-rouge">"r1"</code>	
+							was defined a 64 bit integer string.
+							<code class="language-plaintext highlighter-rouge">"Mat4x4Scale"</code>
+							 takes the r1 matrix and Petals input. The Petals input was defined as an integer earlier in the file, in this specific instance it is 0.38, which scales the Large Petals mesh to 0.38 of its original size. This was the first thing that required 
+							<code class="language-plaintext highlighter-rouge">"r1"</code> 
+							to be defined by I64
+							</p>
+							<p>The next step is setting up the identity equation for the matrix, which lets  us set its position and modify it in other ways similar to the previous example. The next three lines are defining the mesh's origin point in respect to the x,y and z axis. The out of place variable 
+							<code class="language-plaintext highlighter-rouge">"GR_Z_ALL"</code>
+							 to my knowledge sets it above other entities. If this isn't done there is a chance the mesh flashes in and out while being drawn.
+							</p>
+							<p>The positioning is more or less the same except  
+							<code class="language-plaintext highlighter-rouge">"Flower_Height"</code> 
+							which was an additional variable I defined as a constant. The rotation is also very similar with the addition of 
+							<code class="language-plaintext highlighter-rouge">"Z_Rot_Amt_Scale"</code> 
+							.
+							</p>
+							<p>
+							The next part of the Interpolation matrix is the main addition I made. It's the other part that required defining 
+							<code class="language-plaintext highlighter-rouge">"r1"</code> 
+							as a 64 bit integer string. What 
+							<code class="language-plaintext highlighter-rouge">"SpriteInterpolate"</code> 
+							does is draw a unit vector between each moved vertex on a edited mesh you make. From there it takes a constant to place the vertex somewhere along that vector via interpolation. Interestingly  you can use a constant greater than
+							</p>
 							<h4 style="text-indent: 40px">• Minor Changes</h4>
 							<p>Towards the end I decided to change the background color to the darker 
 								<code class="language-plaintext highlighter-rouge">"Cyan"</code>
