@@ -348,20 +348,37 @@
 							.
 							</p>
 							<p>
-							The next part of the Interpolation matrix is the main addition I made. It's the other part that required defining 
+							The next part is the Interpolation matrix which is the main addition I made. It's the other part that required defining 
 							<code class="language-plaintext highlighter-rouge">"r1"</code> 
 							as a 64 bit integer string. What 
 							<code class="language-plaintext highlighter-rouge">"SpriteInterpolate"</code> 
-							does is draw a unit vector between each moved vertex on a edited mesh you make. From there it takes a constant to place the vertex somewhere along that vector via interpolation. Interestingly  you can use a constant greater than
+							does is draw a unit vector between each moved vertex on a edited mesh you make. From there it takes a constant to place the vertex somewhere along that vector via linear interpolation. Interestingly  you can use a constant greater than 1 and less than zero. I took advantage of this by using 
+							<code class="language-plaintext highlighter-rouge">"Sin((pi*dt)/4+3*pi/2)"</code> 
+							which dips into both the positive and negative as a function of time. This way I only needed to make 1 modified mesh, which I rotated the ends of the petals 10° about the center. You can also see that the line is refrencing two different meshes. When you see the animation you'll notice the tips bend both ways despite only there only being a straight petal mesh and a single bent petal mesh. The function is also timed such that the tips trail the main petals in a way that look like they're being dragged and have mass with rigity.
+							</p>
+							<p>The rest of the code for the other meshes are the same for the most part. There's different constants used for the sacling of the small and large petals since they reference the same meshes. There's also 2-D text sprites for "Project-Temple" and "Project-Temple.com" that were imported as .BMP's. The process for importing .BMP's is long and annoying; I may do another write-up on that topic alone in the future, but if I haven't and you want to know how, just email me.
 							</p>
 							<h4 style="text-indent: 40px">• Minor Changes</h4>
 							<p>Towards the end I decided to change the background color to the darker 
 								<code class="language-plaintext highlighter-rouge">"Cyan"</code>
 								rather than 
 								<code class="language-plaintext highlighter-rouge">"LtCyan"</code>
-								. A small and simple but important change. I also added my own music. I kept the same spirit by having it be a single instrument, though I opted to use a modern MIDI editor on Windows. While the grating monotone notes have a certain appeal to some, to many it is like nails on chalkboard.
+								. A small and simple but important change. I also added my own music. I kept the same spirit by having it be single instrument, though I opted to use a modern MIDI editor on Windows. While the grating monotone notes have a certain appeal to some, to many it is like nails on chalkboard. If you have a guess at what song it is you can shoot me an email for that too. 
 							</p>
 							<h4 style="text-align: center">Result:</h4>
+							<div id="main">
+								<p style="text-indent: 0px">Intro:</p>
+                				<iframe src="https://www.youtube.com/embed/vffE8ytixfQ" width=640 height=360 allow="autoplay; encrypted-media" allowfullscreen>
+                				</iframe>
+								<p style="text-indent: 0px">Outro:</p>
+								<iframe src="https://www.youtube.com/embed/asm9J7sSmLo" width=640 height=360 allow="autoplay; encrypted-media" allowfullscreen>
+                				</iframe>
+           		 			</div>
+							<p>Overall this was a fun primer for Temple OS. While nothing I did was particularly groundbreaking, it did give me experience with an obscure operating system. Merely getting anquainted with the command line, switching directories, mounting disks, moving files, editing/running programs, and other simple tasks was quite the adventure only having had experience with Windows beforehand. If you are even condsidering doing a project in Temple OS for any reason, I highly recommend it, though please do use the tour once you get it installed. In a lot of ways making/editing this program reminded me of MATLAB, which Terry does credit as having had an effect on choices he made while developing Temple OS. I did some extra learning about C and specifically Holy C as well. In the end I got a pretty sweet unique looking logo/theme for projects in the future, which was the initial goal I set out to do in the first place.
+							</p>
+							
+							
+							
 							<hr>
                         </ul>
 						<ul>
