@@ -300,7 +300,10 @@
 							<h4 style="text-indent: 40px">• 3-D Meshes</h4>
 							<p>The first thing I decided to do was make the 3-D meshes for use in the animation. Obviously we'll be using the built in graphics editor to make our meshes as trying to import them is way beyond the scope of what I'm looking to do. Interestingly in TOS, the program doesn't link to a file path for the mesh that you have saved as a file elsewhere, it's actually saved and editable in the program. Terry mentioned that to use the 3-D mesh editor you need to be a glutton for punishment, though once I got the basics down it wasn't that bad; Maybe it's due to the simplicity of the meshes I made.
 								<br>
-								<br>
+								<div id="main" style="margin-bottom: 0px">
+							<img src="images/seeds mesh.png" style="width:49%;margin-bottom: 100px"/>
+							<img src="images/petals mesh.png" style="width:49%"/>
+							</div>
 								Sidenote, to edit an existing mesh, have your cursor selection over the text representation for the mesh you want to edit, press 
 								<code class="language-plaintext highlighter-rouge">"ctrl+r"</code>,
 								then on the right side of the graphics menu, then select the mesh. Now you can go on to use the left menu to edit. Even if you're making your own mesh from scratch you'll need to do this since you're human and are bound to make mistakes (Save,Save,Save!), especially when you're working with the rather finicky mesh editor.
@@ -308,6 +311,9 @@
 							<h4 style="text-indent: 40px">• Code Additions</h4>
 							<p>So I wanted to make the code somewhat my own, rather than just switch out a few assets and tweak a few variables. I decided I wanted the meshes to be animated in some way other than just rotation. Essentailly I decided I wanted verticies to move in relation to each other during the animation and that certainly wasn't done in TOSTheme.HC.Z . After some research I figured out a way to do it, the example is explained below.
 							</p>
+							<img src="images/mesh draw.png" style="margin-left: 25px" />
+							<p>So I've cleaned it up a bit for the purposes of this write-up, I apologize that the rest isn't, though the other examples of drawing the mesh are pretty much the exact same but with the variables changed out for the deifined integers for scaling and the mesh files themselves.</p>
+							<img src="images/define.png" style="margin-left: 50px" />
 							<h4 style="text-indent: 40px">• Minor Changes</h4>
 							<p>Towards the end I decided to change the background color to the darker 
 								<code class="language-plaintext highlighter-rouge">"Cyan"</code>
