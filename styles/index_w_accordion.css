@@ -143,6 +143,9 @@ code {
     text-align: center;
 }
 
+img.rounded-corners {
+  border-radius: 25px;
+}
 
 
 
@@ -158,6 +161,9 @@ code {
 }
 
 #menu2:checked ~ .multi-level, .item input:checked ~ ul {
+    display: block;
+}
+#menu3:checked ~ .multi-level, .item input:checked ~ ul {
     display: block;
 }
 

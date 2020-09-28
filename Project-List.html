@@ -247,6 +247,7 @@
             </div>
         </div>
 	</div>
+
 		
 
 <br>			
@@ -483,7 +484,116 @@
         </div>
 	</div>
 						</div>
-			
+
+
+<br>
+
+
+
+<div class="nav">
+        <input type="checkbox" id="menu3" checked/>
+        <label for="menu3" id="nav-icon">&#9776 <h3 style="display: inline;vertical-align: bottom">Additive Manufacturing</h3> &#9776</label>
+    
+        
+			        <div class="multi-level">
+
+          
+            <div class="item">
+                <input type="checkbox" id="kine"/>
+                <img src="images/Arrow.png" class="arrow"><label for="kine">
+				<img src="images/xyz.png" style="margin-bottom: 2px;vertical-align: middle;height: 50px; display: inline;padding-right: 1em;" >
+				
+				<h2 style="display: inline">Choosing Kinematics for an FDM 3-D Printer</h2>
+				
+				<img src="images/xyz.png" style="margin-bottom: 2px;vertical-align: middle;height: 50px; display: inline;padding-right: 1em" >
+				</label>
+                
+                <ul style="text-align: left">
+                	<h3 style="text-align: center">Problem:</h3>
+					<p>If you're designing an FDM 3-D printer, one of the first questions you usually have for yourself is what kinematic system you're going to use. It defines what kind of components and controller you're going to need, things your printer will innately do well or poorly, and how much your printer is going to cost.
+						<img  src="images/eulerangle.png" alt="Euler Angle Image" class="center" style="max-width: 50%">
+						<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://en.wikipedia.org/wiki/Euler_angles">Wikipedia - Euler Angles</a></h5>
+					<h3 style="text-align: center">Main Choices:</h3>
+					<p>Below is a grouping I've made for different 3-D kinematic systems. This is by no mean a perfect or an exhaustive list as there are plenty of other options, and combinations of options, but I feel comfortable saying 95% of existing 3-D printers can be put into one of the categories below.
+					</p>
+					<h3 style="margin: 0px;padding: 0px;text-indent: 40px"> Linear:</h3>
+					<h4 style="margin: 0px;padding: 0px;text-indent: 80px">• Cartesian</h4>
+					<h4 style="margin: 0px;padding: 0px;text-indent: 80px">• CoreXY/H-bot</h4>
+					<h4 style="margin: 0px;padding: 0px;text-indent: 80px">• Delta</h4>
+					<h3 style="margin: 0px;padding: 0px;text-indent: 40px"> Polar:</h3>
+					<h4 style="margin: 0px;padding: 0px;text-indent: 80px">• Basic Polar</h4>
+					<h4 style="margin: 0px;padding: 0px;text-indent: 80px">• Scara</h4>
+					<h4 style="margin: 0px;padding: 0px;text-indent: 80px">• Robotic Arm</h4>
+					<br>
+
+
+					<h3 style="text-align: center">Choosing Between Linear and Polar:</h3>
+					
+					<h4 style="text-indent: 40px">• Pros/Cons of Linear</h4>
+					<p>One of the main reasons you'd choose a linear option is simplicity. There is a lot of pre-existing open-source support for several different types of linear systems. Another pro is that they're usually easier to troubleshoot than polar systems. They're also less likely to run into the issue of different resolutions at different positions. For a simple Cartesian setup, your resolution in any axis at any position is equal to the minimal step's relation to linear movement. A negative is that you're more likely to only have 3 degrees of freedom, being translation in X, Y, and Z. This is fine for most applications, however, you may deem that your specific purpose requires an additional rotational degree of freedom for rotation about two or three of the axis, which a robotic arm would be great for.
+					</p>
+					<h4 style="text-indent: 40px">• Pros/Cons of Polar</h4>
+					<p>Few applications are going to take advantage of the pros polar systems can provide. Pretty much the only reason you'd pick a basic polar machine is to save money on the hardware required to translate rotational motion to linear motion. It has the major issue of a reduced resolution the farther you are printing away from the center of rotation for the table. A Scara only slightly improves on this. As mentioned in the pros/cons of linear options, a robotic arm could provide an additional rotational degree of freedom in each axis
+					</p>
+					
+					<h3 style="text-align: center">Choosing a Linear System:</h3>
+					<h4 style="text-indent: 40px">Cartesian-</h4>
+					<img  src="images/cartesian work.png" alt="Cartesian Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://www.youtube.com/watch?v=_ramiM3KHYE">Youtube - Teaching Tech</a></h5>
+					<p>This is currently the most ubiquitous out of all linear systems, mostly due to its simplicity. There are many different ways to build them, such as an X gantry on a Z-axis with the bed moving in the Y-axis or the X-axis mounted on the Y-axis, and the bed moving in the Z-axis. Those are the two most common setups, though there are certainly many more. Each motor controls an axis individually, represented in the picture above. Another big advantage is the simplicity of their kinematic calculations, which is due to each motor affecting only 1 axis. This means a fairly cheap controller can be used. This is about the only setup I'd feel comfortable using an 8-bit setup with. The main downside is that with one axis carrying another, it can quickly add up to cause problems, for example, ghosting. Below is an example of an extremely popular Cartesian machine, the CR10. These are typically also going to be some of the most affordable printers.</p>
+					<img  src="images/cr10_2.png" alt="CR10 Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://www.creality3d.shop/">Creality 3D</a></h5>
+					<h4 style="text-indent: 40px">CoreXY/H-Bot-</h4>
+					<img  src="images/corexy work.png" alt="CoreXY Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://www.youtube.com/watch?v=_ramiM3KHYE">Youtube - Teaching Tech</a></h5>
+					<p>In their most popular orientation, both CoreXY and H-Bot use 2 motors in tandem to control the X and Y position of the extruder. CoreXY is becoming more popular by the day as it has many things going for it. The main thing that CoreXY and the H-Bot solve the problem of the mass of a motor from one axis being added to another which is a big drawback of the Cartesian setup. Below you can see a schematic of the system and where the belts are taught and slack. The belts that have to cross out of plane may seem odd though it solves a major problem that the H-Bot has. When you consider the mass of the dynamics parts it's awfully low by comparison to a Cartesian. These printers are becoming cheaper and more available, though as of right now you're going to be paying a higher price for a CoreXY of the same quality as a Cartesian. </p>
+					<img  src="images/corexyschem.jpg" alt="CoreXY Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="http://smoothieware.org/">Smoothieware.org</a></h5>
+					<p>However, a closer look shows that very long belts are used to control the motion of the extruder. While the dynamic mass is reduced, due to the increased length of the belts, a much higher tension will need to be used. A problem that arises from a mixture of the belts needing to be out of plane and high belt tension is that the bearings and their supports are prone to flexing and need to be sufficiently rigid. Below is the schematic of an H-Bot.</p>
+					<img  src="images/hbotschem.jpg" alt="HBot Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="http://smoothieware.org/">Smoothieware.org</a></h5>
+					<p>This is very similar to the CoreXY schematic, though a quick analysis of the statics and dynamics shows there will be a significant moment applied across the gantry. This is called <code class="language-plaintext highlighter-rouge">"racking"</code>. This will act as a significant source of hysteresis/backlash and is the main reason CoreXY's are far more popular. Pretty much the only advantage the H-Bot has is that it looks cleaner. To obtain similar quality prints, the H-Bot needs to be built extremely rigidly by comparison. Below is an example of a Tronxy CoreXY printer.</p>
+					<img  src="images/corexyex.png" alt="CoreXY Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://www.aliexpress.com/i/4001291093061.html">Tronxy Aliexpress Store</a></h5>
+					<h4 style="text-indent: 40px">Delta-</h4>
+					<img  src="images/delta work.png" alt="Delta Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://www.youtube.com/watch?v=_ramiM3KHYE">Youtube - Teaching Tech</a></h5>
+					<p>As shown above, all three motors are working in tandem to control the position of the extruder in all three axis. Of all the linear systems, the Delta probably has the most overhead for kinematics calculations. At this point, a 32-bit controller is more or less necessary, though there may be exceptions. This will add to the cost of the machine. So why would you want a Delta? To print fast. The main thing Delta printer does is print fast. This is due to the very low weight of the dynamics mass. There's not really any conventional gantries or moving beds. The only load on the motors is the weight of the extruder and connecting rods. A drawback of these printers is that you're mostly limited to a Bowden extruder due to the requirement of keeping the extruder a low weight, so these printers won't be friendly with flexible filaments. These printers also tend to print circular features out of round and can require a lot of fiddling. Below is an example of a popular Delta printer, the Flsun Q5.</p>
+					<img  src="images/deltaex.png" alt="Delta Image" class="center rounded-corners" style="max-width: 25%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://top3dshop.com/product/flsun-q5-3d-printer">Top 3D Shop</a></h5>
+					
+					<h3 style="text-align: center">Choosing a Polar System:</h3>
+					<h4 style="text-indent: 40px">Basic Polar-</h4>
+					<img  src="images/polarex.png" alt="Polar Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://www.tomsguide.com/us/polar-3d-printer,review-3206.html">Tom's Guide</a></h5>
+					<p>These aren't particularly popular printers. The main purpose to choose this as a kinematic system is to make a machine that is even cheaper than a Cartesian. This is because it omits the hardware to convert the rotational motion of the motor to translational motion for a single axis. It comes with the drawback of a variable resolution depending on how far away you are printing from the center of the build plate. The majority of these machines are budget machines, as shown by most of the lacking even a heated bed.</p>
+					<h4 style="text-indent: 40px">Scara-</h4>
+					<img  src="images/scaraex.png" alt="Polar Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://www.pinterest.com/pin/315111305176212306/">Pinterest</a></h5>
+					<p>The Scara effectively takes the Basic Polar printer a step farther and trades away the hardware from yet another linear axis. These aren't particularly popular printers either, though they have more merit than the basic polar. There's the interesting possibility of building 360° around the main post, which can lead to an extremely large build volume in comparison to the machine's overall size. However, if the prospect of a fairly low cost to build volume interests you, you should consider this option. It does maintain the downside of a variable resolution, however, it's slightly more complex in this example.</p>
+					<h4 style="text-indent: 40px">Robotic Arm-</h4>
+					<img  src="images/robex.png" alt="Polar Image" class="center rounded-corners" style="max-width: 50%">
+					<h5 style="text-align: center;padding-top: 0px;margin-top: 0px">Source: <a href="https://www.dezeen.com/2014/02/21/3d-printing-robot-by-joris-laarman-draws-freeform-metal-lines/">Dezeen</a></h5>
+					<p>If you've got a few builds underneath your belt and are looking for something exotic, something like a 6-axis Robotic Arm could be a good choice. It provides the advantage of an even better machine footprint to build size ration than a Scara, though it does have a few drawbacks. There aren't really any examples of hobbyist 5/6-axis robotic arm printers, they're pretty much all industrial. The cost associated with supporting several axis in series is fairly high, as well as no existing open-source support for a slicer to generate g-code for printing. However, one thing the style of this kinematic system can bring is simultaneously printing with curvature in all three axis at once, which give you more freedom of the alignment of your layers lines. This is important since your layer lines are typically the weakest points of 3-D prints, so having more freedom in aligning them can significantly strengthen your part.</p>
+					
+					<h3 style="text-align: center">Conclusion:</h3>
+					<p>The printers explored here, and more, all have their place. Some will ultimately be a more niche decision and will therefore be less popular, though that shouldn't immediately disqualify it from your selection. More 5/6-axis robotics arms could be viable in the future with cost optimization and the development of more slicer support. Scara has some interesting qualities, and the Basic Polar will likely stick around as an extremely cheap educational option. With the advent of CoreXY, H-Bot is likely to die off with exception to those already having built them in the past. CoreXY seems on track to become the defacto standard option for a kinematic system given how well it balances so many characteristics. Delta's will stay around for those that want to print fast, plus they just look fascinating while printing, so they'll continue to appeal to hobbyists. Finally, the Cartesian setups won't likely be going anywhere. Their intuitive setup and relatively low associated cost of construction and simple kinematic calculations will ensure they stay in production, though they might start to be overshadowed by the CoreXY setup.</p>
+					
+					<hr>
+                </ul>
+				<ul>
+							<li><div class="sub-item">
+                        	<input type="checkbox" id="kine"/>
+                        	<label for="kine" style="text-align: center"><h4>[Collapse This Project]</h4></label>
+				</ul>
+            </div>
+					            <div class="item">
+                <input type="checkbox" id="menu3"/>
+                <label for="menu3" style="border-bottom: 0px;text-indent: 0px;background-color: darkslategrey"><h2>[End]</h2></label>
+            </div>
+        </div>
+	</div>
+	</div>
 <hr>
 	  <footer style="text-align: center">
 	  <a href = "https://Project-Temple.com">[Home]</a>
