@@ -241,6 +241,58 @@
 					</div></li>
 
             </div>
+
+            <div class="item">
+                <input type="checkbox" id="builty"/>
+                <img src="images/Arrow.png" class="arrow">
+				<label for="builty">
+				<img src="images/barrel_dropdown.png" style="vertical-align: middle;height: 50px; display: inline;padding-left: 1.5em;transform: scaleX(-1)" >
+				
+				<h2 style="display: inline">Built Up Barrel</h2>
+				
+				<img src="images/barrel_dropdown.png" style="vertical-align: middle;height: 50px; display: inline;padding-left: 1.5em" >
+				</label>
+                <ul style="text-align: left">
+
+                    <h4 style="text-align: center">Explanation:</h4>
+					<p>Many larger gun tubes are built up or auto-frettaged, which means they have an internally induced stress in the tube that has to be overcome on top of the original material's strength. In this project, I did the work pertaining to calculating the required geometry to for an optimized built up barrel. Auto-frettaging is overpressurizing the tube such that the inside plastically deforms, and the outer portion pushes inwards on the outer portion. A built up barrel uses two tubes, where the OD of the inner tube is slightly larger than the ID of the outer tube, and the out tube is heated to fit over the inner tube, and when it cools, it shrinks around the inner tube, inducing a stress. Basically, you get a negative stress towards the inside of the barrel, and a positive stress on the inside of the outer tube, but since the outer tube region will naturally experience less radial and hoop stress, you can find a balance point of having the inside of the outer tube and inner barrel wall with equal stress when the barrel is under pressure. 
+					</p>
+					<p>Below is a plot of the stresses in the built up barrel. It can be seen the peak stress of both the inner tube and outer tube is 4.20x10<sup>8</sup> Pa or 420 MPa, as opposed to the original 8.20x10<sup>8</sup> or 820 MPa experienced by the monobloc tube.  
+					</p>
+					
+					<div align="center">
+							<img class="center rounded-corners" src="images/final barrel.png" />
+							<p style="font-family: 'IBMmono';font-weight: bold;margin-top: 0px;text-indent: 0px">(The dark blue line and orange line are the monobloc barrel stresses, while the purple and light blue are the internally induced stresses for the inner and outer tube. Adding the monobloc stresses and internal stresses together gives you the built up barrel stresses.)</p>
+					</div>
+					<p>This ultimately allows you to build a much stronger/lighter barrel. The lighter the barrel, the less weight the trunnion needs to support, keep in mind all that weight is hanging meters out in the air, and it also lessens the deflection of the barrel under its own weight since it is lighter. Other considerations is the reduction in weight will also allow the turret/trunnion to be rotated/adjusted faster given the same force from the actuator. 
+					</p>
+					<p>On top of the work shown above and the work in MATLAB for it, I calculated the cost and time of heating the barrel so it could be assembled, while the coating of the barrel, and testing procedure for it was covered by other group mates. 
+					</p>
+					<hr>
+					<h4 style="text-align: center">View and Download Report/MATLAB Files:</h4>
+					
+					<p>
+							To download the PDF and MATLAB file, click the links below:
+					</p>
+					<a href="downloads/Built Up Barrel Report (Dylan Holtzhauer).pdf" style="margin: 40px; font-weight: bold" download>PDF Download</a>
+					<br>
+					<a href="downloads/built_up_barrel.m" style="margin: 40px; font-weight: bold" download>MATLAB Download</a>
+					<br>
+					<p>If you're on a desktop browser you can just use the frame below to view/download the PDF.
+					</p>
+					<iframe src="downloads/Built Up Barrel Report (Dylan Holtzhauer).pdf" width="90%" height="700px" style="margin-top: 20px;margin-bottom: 20px;"></iframe>
+					<hr>
+
+				<li><div class="sub-item">
+                        	<input type="checkbox" id="builty"/>
+                        	<label for="builty" style="text-align: center"><h4>[Collapse This Project]<h4></h4></label>
+							</div>
+						</ul>
+
+            </div>
+
+
+
             <div class="item">
                 <input type="checkbox" id="menu"/>
                 <label for="menu" style="border-bottom: 0px;text-indent: 0px;background-color: darkslategrey"><h2>[End]</h2></label>
@@ -514,10 +566,13 @@
 				</label>
                 
                 <ul style="text-align: left">
+				<h4 style="text-align: center">Explanation:</h4>
 					<p>Below is a controller design process for a rolling mill. One controller was designed using a root locus, while the other was designed using Bode plots. There's also my opinions my preferences between the two methods, and comparison of the results from each method, mostly their temporal responses like rise time, damping ratio, overshoot, natural frequency, and responses to an incoming fluctuation.
 					</p>
 					<p>It also covers the selection of variable parameters, and even tests the robustness of the controller by changing the paramters, and seeing how the controller responds.
 					</p>
+					<hr>
+					<h4 style="text-align: center">View and Download Report:</h4>
 					<p>To download the PDF, click the link below:
 					</p>
 					<a href="downloads/Rolling Mill Control Project (Dylan Holtzhauer).pdf" style="margin: 40px; font-weight: bold" download>PDF Download</a>
@@ -547,8 +602,10 @@
 				</label>
                 
                 <ul style="text-align: left">
-					<p>Below is lab I completed in university. It was done in cooperation with Jason Lagoa who did the linearization of the system for a simplification of the response, while I did the modeling and analysis of the original and linearized system in Matlab with Simulink. Normally I wouldn't add something like this, but I found the similarity of the modeled response to the response of the actual system too cool to pass up. I'll put a picture below, seriously it's wild. The only real difference is the fade out, which implies the experimentally calculated values for friction and damping are likely off. The close to chaotic motion in the beginning is modeled extremely closely, in other words the suddent change in movement from the interation of the pendulum swinging on the moving cart.
+				<h4 style="text-align: center">Explanation:</h4>
+					<p>Below is lab I completed in university, which was comprised of experiemetnally finding values for defining parameters, like damping and friction coefficients, then modeling a cart sliding on linear rods that had a pendulum with a mass attached riding on the cart. It was done in cooperation with Jason Lagoa who did the linearization of the system for a simplification of the response, while I did the modeling and analysis of the original and linearized system in Matlab with Simulink. Normally I wouldn't add something like this, but I found the similarity of the modeled response to the response of the actual system too cool to pass up. I'll put a picture below, seriously it's wild. The only real difference is the fade out, which implies the experimentally calculated values for friction and damping are likely off. The close to chaotic motion in the beginning is modeled extremely closely, in other words the suddent change in movement from the interation of the pendulum swinging on the moving cart.
 					</p>
+					<hr>
 					<h4 style="text-align: center">Plot Comparison:</h4>
 					<div align="center">
 							<img class="center rounded-corners2" src="images/cart example.png" />
@@ -557,6 +614,8 @@
 							<p>
 							This was one of my first experiences modeling an actual system from real life, and I was amazed with how well minute differences carried across in the simlation. Ultimately this increased my love for control/dynamic systems and even got me reading books like "Nonlinear Dynamics and Chaos" by Steven Strogatz. I still find my interest in control systems interesting since I never liked my calculus classes, but actually forming and solving ordinary differential equations to model systems and calculate paramters for requirements was something I really enjoyed in my controls classes. In other words, my favorite subject ended up being almost entirely comprised of my least favorite.
 							</p>
+							<hr>
+							<h4 style="text-align: center">View and Download Report:</h4>
 							<p>
 							To download the PDF, click the link below:
 					</p>
