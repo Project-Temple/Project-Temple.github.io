@@ -147,6 +147,10 @@ img.rounded-corners {
   border-radius: 25px;
 }
 
+img.rounded-corners2 {
+  border-radius: 25px;
+  width: 90%;
+}
 
 
 /*Func*/
@@ -164,6 +168,9 @@ img.rounded-corners {
     display: block;
 }
 #menu3:checked ~ .multi-level, .item input:checked ~ ul {
+    display: block;
+}
+#menu4:checked ~ .multi-level, .item input:checked ~ ul {
     display: block;
 }
 
